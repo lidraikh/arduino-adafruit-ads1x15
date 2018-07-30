@@ -2,7 +2,15 @@
  * Arduino Adafruit_ADS1015 library API wrapper
  */
 
+#ifndef _MGOS_ARDUINO_ADAFRUIT_ADS1015_H_
+#define _MGOS_ARDUINO_ADAFRUIT_ADS1015_H_
+
+
+#ifdef __cplusplus
 #include "Adafruit_ADS1015.h"
+#else
+typedef struct Adafruit_ADS1015Tag Adafruit_ADS1015;
+#endif
 
 #ifdef __cplusplus
 extern "C"
