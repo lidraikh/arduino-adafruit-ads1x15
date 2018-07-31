@@ -93,7 +93,7 @@ int mgos_ADS1015_getLastConversionResults(Adafruit_ADS1015 *ads);
 //   GAIN_SIXTEEN      = ADS1015_REG_CONFIG_PGA_0_256V
 // } adsGain_t;
 
-void mgos_ADS1015_setGain(Adafruit_ADS1015 *ads, int gain);
+void mgos_ADS1015_setGain(Adafruit_ADS1015 *ads, adsGain_t gain);
 
 #ifdef __cplusplus
 }
