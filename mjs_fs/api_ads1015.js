@@ -3,7 +3,7 @@
 
 let Adafruit_ADS1015 = {
   _create: ffi('void *mgos_ADS1015_create(int)'),
-  _create_ads1115: ffi('void *mgos_ADS1115_create(int)'),
+ // _create_ads1115: ffi('void *mgos_ADS1115_create(int)'),
   _close: ffi('void mgos_ADS1015_close(void *)'),
   _begin: ffi('void mgos_ADS1015_begin(void *)'),
   _rse: ffi('int mgos_ADS1015_readADC_SingleEnded(void *,int)'),
