@@ -5,6 +5,7 @@
 #ifndef _MGOS_ARDUINO_ADAFRUIT_ADS1015_H_
 #define _MGOS_ARDUINO_ADAFRUIT_ADS1015_H_
 
+#include <adsGain_t.h>
 
 #ifdef __cplusplus
 #include "Adafruit_ADS1015.h"
