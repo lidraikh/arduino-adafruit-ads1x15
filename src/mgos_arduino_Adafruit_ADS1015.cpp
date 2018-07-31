@@ -46,7 +46,7 @@ int mgos_ADS1015_getLastConversionResults(Adafruit_ADS1015 *ads) {
   return ads->getLastConversionResults();
 }
 
-void mgos_ADS1015_setGain(Adafruit_ADS1015 *ads, adsGain_t gain) {
+void mgos_ADS1015_setGain(Adafruit_ADS1015 *ads, int gain) {
   if (ads == nullptr) return;
   ads->setGain(gain);
 }

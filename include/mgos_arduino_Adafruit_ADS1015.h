@@ -25,7 +25,7 @@ Adafruit_ADS1015 *mgos_ADS1015_create(int i2cAddress);
 /*
  * Create an ADS1115 instance, with the given I2C address.
  */
-Adafruit_ADS1115 *mgos_ADS1115_create(int i2cAddress);
+//Adafruit_ADS1115 *mgos_ADS1115_create(int i2cAddress);
 
 /*
  * Close the given ADS1015/ADS1115 instance; no methods can be called on this
@@ -82,7 +82,18 @@ int mgos_ADS1015_getLastConversionResults(Adafruit_ADS1015 *ads);
 // - `GAIN_EIGHT`
 // - `GAIN_SIXTEEN`
  */
-void mgos_ADS1015_setGain(Adafruit_ADS1015 *ads, adsGain_t gain);
+
+// typedef enum
+// {
+//   GAIN_TWOTHIRDS    = ADS1015_REG_CONFIG_PGA_6_144V,
+//   GAIN_ONE          = ADS1015_REG_CONFIG_PGA_4_096V,
+//   GAIN_TWO          = ADS1015_REG_CONFIG_PGA_2_048V,
+//   GAIN_FOUR         = ADS1015_REG_CONFIG_PGA_1_024V,
+//   GAIN_EIGHT        = ADS1015_REG_CONFIG_PGA_0_512V,
+//   GAIN_SIXTEEN      = ADS1015_REG_CONFIG_PGA_0_256V
+// } adsGain_t;
+
+void mgos_ADS1015_setGain(Adafruit_ADS1015 *ads, int gain);
 
 #ifdef __cplusplus
 }
