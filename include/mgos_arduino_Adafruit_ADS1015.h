@@ -87,3 +87,5 @@ void mgos_ADS1015_setGain(Adafruit_ADS1015 *ads, adsGain_t gain);
 #ifdef __cplusplus
 }
 #endif  /* __cplusplus */
+
+#endif /*_MGOS_ARDUINO_ADAFRUIT_ADS1015_H_*/
